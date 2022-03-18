@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+        <title> Documento </title>
+    </head>
+    <body>
+        <header>
+            <h1> Elementos de formulario </h1>
+        </header>
+        <nav>
+            <a href="index.html">| Inicio |</a>
+            <a href="pasatiempos.html">| Pasatiempos |</a>
+            <a href="fotos.html">| Fotos |</a>
+            <a href="contacto.html">| Contactos |</a>
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <form name="frmDatos" method="post" action="#">
+                        <fieldset style="width: auto;">
+                            <legend> Datos personales </legend>
+                            <label for="nombre"> Nombre: </label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                            <br>
+                            <label for="apellidos"> Apellidos: </label>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                            <br>
+                            <label for="edad"> Edad: </label>
+                            <input type="number" name="edad" id="edad" placeholder="Edad" required>
+                            <br>
+                            <label for="email"> Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <br>
+                            <label for="pass"> Contraseña: </label>
+                            <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+                            <br>
+                            <label for="pass2"> Repetir contraseña: </label>
+                            <input type="password" name="pass2" id="pass2" placeholder="Repetir contraseña" required>
+                            <br>
+                            <label for="sexo"> Sexo: </label>
+                            <input type="radio" name="sexo" id="sexo" value="hombre" checked> Hombre
+                            <input type="radio" name="sexo" id="sexo" value="mujer"> Mujer
+                            <br>
+                            <label for="estado">Entidad Federativa: </label>
+                            <select>
+                                name="estado"
+                                id
+                                required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Ciudad de México">Ciudad de México</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Michoacán">Michoacán</option>
+                            </select>
+                            <br>
+                            <label for="terminos"> Acepto los terminos y condiciones: </label>
+                            <input type="checkbox" name="terminos" id="terminos" value="acepto" required>
+                            <br>
+                            <input type="submit" name="enviar" value="Enviar">
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy; Copyright ZzZzzzZz 2022 - <?php echo date("Y"); ?>
+            </p>
+            <adrees>
+                Av. Monterrey #123, Col. Centro, C.P. 02300, México, D.F.
+            </adrees>
+            <small>
+                <a href="mailto:
+            </small>
+        </footer>
+        <h1>
+        CONTACTAME
+        </h1>
+    </footer>
+    </body>
+</html>

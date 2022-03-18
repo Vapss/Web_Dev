@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <header>
+    <h1> Sumar tres números y su promedio </h1>
+</header>
+<nav>
+    <a href="index.html">| Inicio |</a>
+    <a href="pasatiempos.html">| Pasatiempos |</a>
+    <a href="fotos.html">| Fotos |</a>
+    <a href="contacto.html">| Contactos |</a>
+</nav>
+<p>Por favor, introduce tres números:</p>
+<input id="num1"><br>
+<input id="num2"><br>
+<input id="num3"><br>
+<button type="button" onclick="myFunction()">Sumar</button>
+<p id="sumando"></p>
+<script>
+function myFunction() {
+  var x,y,suma,prom1,text,z;
+  x = document.getElementById("num1").value;
+  y = document.getElementById("num2").value;
+  z = document.getElementById("num3").value;
+  if (isNaN(x) || isNaN(y) || isNaN(z)) {
+    text = "Es necesarios introducir tres números válidos";
+  } else {
+    //si no ponemos parseFloat concatenaría x con y
+    suma=parseFloat(x)+parseFloat(y)+parseFloat(z);
+    prom1 = suma/3;
+    text= "La súma es "+ suma +" Y el promedio es  "+prom1;
+
+  }
+  document.getElementById("sumando").innerHTML = text;
+}
+</script>
+</body>
+</html>

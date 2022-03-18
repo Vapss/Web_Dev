@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+    <link rel="stylesheet" type="text/css"  href='css/common.css' />
+    <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+    <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+    <link rel="stylesheet" type="text/css"  href='css/prettyPhoto.css' />
+    <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+    <link rel="stylesheet" type="text/css"  href='style.css' />
+</head>
+
+<body>
+<div>
+    <form>
+        <h1 class="text-warning text-center pt-5"> Solicitud de empleo </h1>
+        <table id="encabezado" border="1px" class="center">
+            <tr>
+                <td rowspan="4">
+                    <label>Puesto a solicitar: <br>
+                      <input type="number" class="input" placeholder="Ejemplo: $4,500" id="sueldoId">
+                      <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputFecha">Fecha de aplicacion: <br>
+                    <input type="date" id="inputFecha">
+                    <br>
+                  </label>
+                </td>
+                <td rowspan="4" colspan="2" id="espacioimg">
+                    <label for="Foto">Ingresa una foto</label>
+                    <button type="submit">Elegir Archivo</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sueldoId">Sueldo Mensual deseado<br>
+                    <input type="number" class="input" placeholder="Ejemplo: 4,500" id="sueldoId">
+                    <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sueldoAuId">Sueldo Mensual Aprobado<br>
+                    <input type="number" class="input" placeholder="Ejemplo: 4,500" id="sueldoAuId">
+                      <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <>
+                <td>
+                    <label for="fechaCon">Fecha de Contratación: <br>
+                    <input type="date" placeholder="12/02/2021" id="fechaCon" size="90%">
+                </td>
+              </label>
+            </tr>
+        </table>
+
+        <table border="2px" class="center">
+            <caption> Datos Personales del Solicitante</caption>
+            <tr>
+                <td>
+                    <label for="inputNombre">Nombre<br>
+                    <input type="text" class="input" placeholder="Ejemplo: Juan" id="inputNombre">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputApellido">Apellido Paterno<br>
+                    <input type="text" class="input" id="inputApellido" placeholder="Apellido Paterno">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputApellidoM">Apellido Materno<br>
+                    <input type="text" id="inputApellidoM" class="input" placeholder="Apellido Materno">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                    <label for="inputEdad">Edad<br>
+                    <input type="text" id="inputEdad" class="input"placeholder="Edad">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputDomicilio">Domicilio<br>
+                    <input type="text" id="inputCURP" class="input" placeholder="Calle y Numero">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputColonia">Colonia<br>
+                    <input type="text" id="inputCURP" class="input "placeholder="Colonia">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputCP">Código Postal<br>
+                    <input type="text" id="inputCURP" class="input "placeholder="Código Postal">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputCiudad">Ciudad<br>
+                    <input type="text" id="inputCURP" placeholder="Ciudad" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputEstado">Estado<br>
+                      <select>
+                        <option value="">Selecciona un Estado</option>
+                        <option value="DIF">CDMX</option>
+                        <option value="AGS">Aguascalientes</option>
+                        <option value="BCN">Baja California</option>
+                        <option value="BCS">Baja California Sur</option>
+                        <option value="CAM">Campeche</option>
+                        <option value="CHP">Chiapas</option>
+                        <option value="CHI">Chihuahua</option>
+                        <option value="COA">Coahuila</option>
+                        <option value="COL">Colima</option>
+                        <option value="DUR">Durango</option>
+                        <option value="GTO">Guanajuato</option>
+                        <option value="GRO">Guerrero</option>
+                        <option value="HGO">Hidalgo</option>
+                        <option value="JAL">Jalisco</option>
+                        <option value="MEX">M&eacute;xico</option>
+                        <option value="MIC">Michoac&aacute;n</option>
+                        <option value="MOR">Morelos</option>
+                        <option value="NAY">Nayarit</option>
+                        <option value="NLE">Nuevo Le&oacute;n</option>
+                        <option value="OAX">Oaxaca</option>
+                        <option value="PUE">Puebla</option>
+                        <option value="QRO">Quer&eacute;taro</option>
+                        <option value="ROO">Quintana Roo</option>
+                        <option value="SLP">San Luis Potos&iacute;</option>
+                        <option value="SIN">Sinaloa</option>
+                        <option value="SON">Sonora</option>
+                        <option value="TAB">Tabasco</option>
+                        <option value="TAM">Tamaulipas</option>
+                        <option value="TLX">Tlaxcala</option>
+                        <option value="VER">Veracruz</option>
+                        <option value="YUC">Yucat&aacute;n</option>
+                        <option value="ZAC">Zacatecas</option>
+                      </select>	
+                    </label>
+                </td>
+                <td>
+                    <label for="inputTel">Lugar de Nacimiento<br>
+                    <select>
+                      <option value="">Selecciona un Estado</option>
+                      <option value="DIF">Distrito Federal</option>
+                      <option value="AGS">Aguascalientes</option>
+                      <option value="BCN">Baja California</option>
+                      <option value="BCS">Baja California Sur</option>
+                      <option value="CAM">Campeche</option>
+                      <option value="CHP">Chiapas</option>
+                      <option value="CHI">Chihuahua</option>
+                      <option value="COA">Coahuila</option>
+                      <option value="COL">Colima</option>
+                      <option value="DUR">Durango</option>
+                      <option value="GTO">Guanajuato</option>
+                      <option value="GRO">Guerrero</option>
+                      <option value="HGO">Hidalgo</option>
+                      <option value="JAL">Jalisco</option>
+                      <option value="MEX">M&eacute;xico</option>
+                      <option value="MIC">Michoac&aacute;n</option>
+                      <option value="MOR">Morelos</option>
+                      <option value="NAY">Nayarit</option>
+                      <option value="NLE">Nuevo Le&oacute;n</option>
+                      <option value="OAX">Oaxaca</option>
+                      <option value="PUE">Puebla</option>
+                      <option value="QRO">Quer&eacute;taro</option>
+                      <option value="ROO">Quintana Roo</option>
+                      <option value="SLP">San Luis Potos&iacute;</option>
+                      <option value="SIN">Sinaloa</option>
+                      <option value="SON">Sonora</option>
+                      <option value="TAB">Tabasco</option>
+                      <option value="TAM">Tamaulipas</option>
+                      <option value="TLX">Tlaxcala</option>
+                      <option value="VER">Veracruz</option>
+                      <option value="YUC">Yucat&aacute;n</option>
+                      <option value="ZAC">Zacatecas</option>
+                    </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputCel">Fecha de Nacimiento<br>
+                    <input type="date" id="inputFecha">
+                    <br>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputEmail">Nacionalidad<br>
+                      <select name="nationality">
+                        <option value="">Selecciona una nacionalidad</option>
+                        <option value="afghan">Afghan</option>
+                        <option value="albanian">Albanian</option>
+                        <option value="algerian">Algerian</option>
+                        <option value="american">American</option>
+                        <option value="andorran">Andorran</option>
+                        <option value="angolan">Angolan</option>
+                        <option value="antiguans">Antiguans</option>
+                        <option value="argentinean">Argentinean</option>
+                        <option value="armenian">Armenian</option>
+                        <option value="australian">Australian</option>
+                        <option value="austrian">Austrian</option>
+                        <option value="azerbaijani">Azerbaijani</option>
+                        <option value="bahamian">Bahamian</option>
+                        <option value="bahraini">Bahraini</option>
+                        <option value="bangladeshi">Bangladeshi</option>
+                        <option value="barbadian">Barbadian</option>
+                        <option value="barbudans">Barbudans</option>
+                        <option value="batswana">Batswana</option>
+                        <option value="belarusian">Belarusian</option>
+                        <option value="belgian">Belgian</option>
+                        <option value="belizean">Belizean</option>
+                        <option value="beninese">Beninese</option>
+                        <option value="bhutanese">Bhutanese</option>
+                        <option value="bolivian">Bolivian</option>
+                        <option value="bosnian">Bosnian</option>
+                        <option value="brazilian">Brazilian</option>
+                        <option value="british">British</option>
+                        <option value="bruneian">Bruneian</option>
+                        <option value="bulgarian">Bulgarian</option>
+                        <option value="burkinabe">Burkinabe</option>
+                        <option value="burmese">Burmese</option>
+                        <option value="burundian">Burundian</option>
+                        <option value="cambodian">Cambodian</option>
+                        <option value="cameroonian">Cameroonian</option>
+                        <option value="canadian">Canadian</option>
+                        <option value="cape verdean">Cape Verdean</option>
+                        <option value="central african">Central African</option>
+                        <option value="chadian">Chadian</option>
+                        <option value="chilean">Chilean</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="colombian">Colombian</option>
+                        <option value="comoran">Comoran</option>
+                        <option value="congolese">Congolese</option>
+                        <option value="costa rican">Costa Rican</option>
+                        <option value="croatian">Croatian</option>
+                        <option value="cuban">Cuban</option>
+                        <option value="cypriot">Cypriot</option>
+                        <option value="czech">Czech</option>
+                        <option value="danish">Danish</option>
+                        <option value="djibouti">Djibouti</option>
+                        <option value="dominican">Dominican</option>
+                        <option value="dutch">Dutch</option>
+                        <option value="east timorese">East Timorese</option>
+                        <option value="ecuadorean">Ecuadorean</option>
+                        <option value="egyptian">Egyptian</option>
+                        <option value="emirian">Emirian</option>
+                        <option value="equatorial guinean">Equatorial Guinean</option>
+                        <option value="eritrean">Eritrean</option>
+                        <option value="estonian">Estonian</option>
+                        <option value="ethiopian">Ethiopian</option>
+                        <option value="fijian">Fijian</option>
+                        <option value="filipino">Filipino</option>
+                        <option value="finnish">Finnish</option>
+                        <option value="french">French</option>
+                        <option value="gabonese">Gabonese</option>
+                        <option value="gambian">Gambian</option>
+                        <option value="georgian">Georgian</option>
+                        <option value="german">German</option>
+                        <option value="ghanaian">Ghanaian</option>
+                        <option value="greek">Greek</option>
+                        <option value="grenadian">Grenadian</option>
+                        <option value="guatemalan">Guatemalan</option>
+                        <option value="guinea-bissauan">Guinea-Bissauan</option>
+                        <option value="guinean">Guinean</option>
+                        <option value="guyanese">Guyanese</option>
+                        <option value="haitian">Haitian</option>
+                        <option value="herzegovinian">Herzegovinian</option>
+                        <option value="honduran">Honduran</option>
+                        <option value="hungarian">Hungarian</option>
+                        <option value="icelander">Icelander</option>
+                        <option value="indian">Indian</option>
+                        <option value="indonesian">Indonesian</option>
+                        <option value="iranian">Iranian</option>
+                        <option value="iraqi">Iraqi</option>
+                        <option value="irish">Irish</option>
+                        <option value="israeli">Israeli</option>
+                        <option value="italian">Italian</option>
+                        <option value="ivorian">Ivorian</option>
+                        <option value="jamaican">Jamaican</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="jordanian">Jordanian</option>
+                        <option value="kazakhstani">Kazakhstani</option>
+                        <option value="kenyan">Kenyan</option>
+                        <option value="kittian and nevisian">Kittian and Nevisian</option>
+                        <option value="kuwaiti">Kuwaiti</option>
+                        <option value="kyrgyz">Kyrgyz</option>
+                        <option value="laotian">Laotian</option>
+                        <option value="latvian">Latvian</option>
+                        <option value="lebanese">Lebanese</option>
+                        <option value="liberian">Liberian</option>
+                        <option value="libyan">Libyan</option>
+                        <option value="liechtensteiner">Liechtensteiner</option>
+                        <option value="lithuanian">Lithuanian</option>
+                        <option value="luxembourger">Luxembourger</option>
+                        <option value="macedonian">Macedonian</option>
+                        <option value="malagasy">Malagasy</option>
+                        <option value="malawian">Malawian</option>
+                        <option value="malaysian">Malaysian</option>
+                        <option value="maldivan">Maldivan</option>
+                        <option value="malian">Malian</option>
+                        <option value="maltese">Maltese</option>
+                        <option value="marshallese">Marshallese</option>
+                        <option value="mauritanian">Mauritanian</option>
+                        <option value="mauritian">Mauritian</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="micronesian">Micronesian</option>
+                        <option value="moldovan">Moldovan</option>
+                        <option value="monacan">Monacan</option>
+                        <option value="mongolian">Mongolian</option>
+                        <option value="moroccan">Moroccan</option>
+                        <option value="mosotho">Mosotho</option>
+                        <option value="motswana">Motswana</option>
+                        <option value="mozambican">Mozambican</option>
+                        <option value="namibian">Namibian</option>
+                        <option value="nauruan">Nauruan</option>
+                        <option value="nepalese">Nepalese</option>
+                        <option value="new zealander">New Zealander</option>
+                        <option value="ni-vanuatu">Ni-Vanuatu</option>
+                        <option value="nicaraguan">Nicaraguan</option>
+                        <option value="nigerien">Nigerien</option>
+                        <option value="north korean">North Korean</option>
+                        <option value="northern irish">Northern Irish</option>
+                        <option value="norwegian">Norwegian</option>
+                        <option value="omani">Omani</option>
+                        <option value="pakistani">Pakistani</option>
+                        <option value="palauan">Palauan</option>
+                        <option value="panamanian">Panamanian</option>
+                        <option value="papua new guinean">Papua New Guinean</option>
+                        <option value="paraguayan">Paraguayan</option>
+                        <option value="peruvian">Peruvian</option>
+                        <option value="polish">Polish</option>
+                        <option value="portuguese">Portuguese</option>
+                        <option value="qatari">Qatari</option>
+                        <option value="romanian">Romanian</option>
+                        <option value="russian">Russian</option>
+                        <option value="rwandan">Rwandan</option>
+                        <option value="saint lucian">Saint Lucian</option>
+                        <option value="salvadoran">Salvadoran</option>
+                        <option value="samoan">Samoan</option>
+                        <option value="san marinese">San Marinese</option>
+                        <option value="sao tomean">Sao Tomean</option>
+                        <option value="saudi">Saudi</option>
+                        <option value="scottish">Scottish</option>
+                        <option value="senegalese">Senegalese</option>
+                        <option value="serbian">Serbian</option>
+                        <option value="seychellois">Seychellois</option>
+                        <option value="sierra leonean">Sierra Leonean</option>
+                        <option value="singaporean">Singaporean</option>
+                        <option value="slovakian">Slovakian</option>
+                        <option value="slovenian">Slovenian</option>
+                        <option value="solomon islander">Solomon Islander</option>
+                        <option value="somali">Somali</option>
+                        <option value="south african">South African</option>
+                        <option value="south korean">South Korean</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="sri lankan">Sri Lankan</option>
+                        <option value="sudanese">Sudanese</option>
+                        <option value="surinamer">Surinamer</option>
+                        <option value="swazi">Swazi</option>
+                        <option value="swedish">Swedish</option>
+                        <option value="swiss">Swiss</option>
+                        <option value="syrian">Syrian</option>
+                        <option value="taiwanese">Taiwanese</option>
+                        <option value="tajik">Tajik</option>
+                        <option value="tanzanian">Tanzanian</option>
+                        <option value="thai">Thai</option>
+                        <option value="togolese">Togolese</option>
+                        <option value="tongan">Tongan</option>
+                        <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                        <option value="tunisian">Tunisian</option>
+                        <option value="turkish">Turkish</option>
+                        <option value="tuvaluan">Tuvaluan</option>
+                        <option value="ugandan">Ugandan</option>
+                        <option value="ukrainian">Ukrainian</option>
+                        <option value="uruguayan">Uruguayan</option>
+                        <option value="uzbekistani">Uzbekistani</option>
+                        <option value="venezuelan">Venezuelan</option>
+                        <option value="vietnamese">Vietnamese</option>
+                        <option value="welsh">Welsh</option>
+                        <option value="yemenite">Yemenite</option>
+                        <option value="zambian">Zambian</option>
+                        <option value="zimbabwean">Zimbabwean</option>
+                      </select>
+                      </label>
+                </td>
+            </tr>
+            </table>
+            <table border="2px" class="center">
+                <caption>Documentación del solicitante</caption>
+            <tr>
+                <td colspan="2">
+                    <label for="inputCURP">Clave Única de Registro de Población<br>
+                    <input type="text" id="inputCURP" placeholder="CURP" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label for="inputAfore">AFORE<br>
+                    <input type="text" id="inputAfore" placeholder="AFORE" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </tr>
+                <td>
+                    <label for="inputRFC">RFC<br>
+                    <input type="text" id="inputRFC" placeholder="RFC" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputNSS">NSS<br>
+                    <input type="text" id="inputNSS" placeholder="# Seguro Social" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputCartMil">Cartilla Militar<br>
+                    <select>
+                        <option value="">Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                    </label>
+                    <label for="inputCartMil"><br>Numero Cartilla Militar</br>
+                    <input type="text" id="inputCartMil" placeholder="Numero Cartilla Militar" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputPasp">Pasaporte<br>
+                    <select>
+                        <option value="">Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                    </label>
+                    <label for="inputPasp"><br>Numero de Pasaporte  </br>
+                    <input type="text" id="inputPasp" placeholder="Numero de Pasaporte" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                <tr>
+                <td>
+                    <label for="inputCURP">Licencia De Manejo<br>
+                    <select>
+                        <option value="">Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputTipoLic">Tipo de licencia<br>
+                    <select>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="SuperLicencia FIA">SuperLicencia de la FIA</option>
+                    </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputNumLic">Número de Licencia<br>
+                    <input type="text" id="inputNumLic" placeholder="Número de Licencia" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="inputDocExtran">Siendo extranjero, que documentos le permiten trabajar en el país<br>
+                    <input type="text" id="inputDocExtran" placeholder="Documentos" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </tr>
+            </tr>
+            </table>
+        <table border="2px" class="center">
+            <caption>Estado de Salud y Hábitos Personales de Solicitante</caption>
+            <tr>
+                <td>
+                    <label for="inputEstadoSalud">Estado de Salud Mental</label><br>
+                    <select>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="1">Bueno</option>
+                        <option value="2">Regular</option>
+                        <option value="3">Malo</option>
+                    </select>
+                </td>
+                <td colspan="4">
+                    <label for="inputHabito">¿Padece alguna enfermedad crónica?<br>
+                    <select>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                        <option value="3">Desconocido</option>
+                    </select>
+                  </label>
+                    <label for="inputHabito"><br>¿Cual? </br>
+                    <input type="text" id="inputHabito" placeholder="Anote su enfermedad cronica" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputEstadoSalud">Estado de Salud Física<br>
+                    <select>
+                        <option value="">¿Practica algún deporte?</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                  </label>
+                    <label><br>¿Cual?</br>
+                    <input type="text" id="inputHabito" placeholder="¿Cual deporte?" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputHabito">¿Pertenece a algún club social o deportivo?<br>
+                    <select>
+                        <option value="">Selecciona una opcion</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                  </label>
+                    <label for="inputHabito"><br>¿Cual?</br>
+                    <input type="text" id="inputHabito" placeholder="Cual" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="inputPasatiemo">¿Tiene un Pasatiempo favorito?<br>
+                    <input type="text" id="inputPasatiemo" placeholder="Pasatiempo" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label for="inputMeta">¿Cuál es su meta de vida?<br>
+                    <input type="text" id="inputMeta" placeholder="Anote su meta en la vida" size="100%" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+        </table>
+        <table border="2px" class="center">
+            <caption>Datos Familiares</caption>
+            <tr>
+                <td>
+                    <label>Parentezco</label>
+                </td>
+                <td>
+                    <label>Nombre:</label>
+                </td>
+                <td>
+                    <label>Vive:</label>
+                </td>
+                <td>
+                    <label>Fin</label>
+                </td>
+                <td>
+                    <label>Domicilio</label>
+                </td>
+                <td>
+                    <label>Ocupación</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="text" id="inputParent" placeholder="Parentezco" class="input">
+                   <div class="line-box">
+                        <div class="line"></div>
+                   </div>
+                </td>
+                <td>
+                    <input type="text" id="inputNombre" placeholder="Nombre" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputVive" placeholder="Vive" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputFin" placeholder="Fin" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputDomicilio" placeholder="Domicilio" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputOcupacion" placeholder="Ocupacion" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="text" id="inputParent" placeholder="Parentezco" class="input">
+                    <div class="line-box">
+                          <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputNombre" placeholder="Nombre" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputVive" placeholder="Vive" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputFin" placeholder="Fin" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputDomicilio" placeholder="Domicilio" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputOcupacion" placeholder="Ocupacion" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="text" id="inputParent" placeholder="Parentezco" class="input">
+                    <div class="line-box">
+                          <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputNombre" placeholder="Nombre" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputVive" placeholder="Vive" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputFin" placeholder="Fin" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputDomicilio" placeholder="Domicilio" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td>
+                    <input type="text" id="inputOcupacion" placeholder="Ocupacion" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                </td>
+            </tr>
+            <tr>
+              <tr>
+                <td colspan="3">
+                <lable>Nombre Hijos</lable>
+                </td>
+                <td colspan="3">
+                <lable>Edad</lable>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                <input type="text" id="inputNombre" placeholder="Nombre" class="input">
+                <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td colspan="3">
+                <input type="text" id="inputEdad" placeholder="Edad" class="input">
+                <div class="line-box">
+                        <div class="line"></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                <input type="text" id="inputNombre" placeholder="Nombre" class="input">
+                <div class="line-box">
+                        <div class="line"></div>
+                </td>
+                <td colspan="3">
+                <input type="text" id="inputEdad" placeholder="Edad" class="input">
+                <div class="line-box">
+                        <div class="line"></div>
+                </td>
+        </table>
+
+        <table border="2px" class="center">
+            <caption>Conocimientos generales</caption>
+            <tr>
+                <td colspan="4">
+                    <label>¿Cual es su nivel de conocimiento en el idioma extranjero (En porcentaje de 0% a 100%)?<br></br>
+                    <input type="text" id="inputIdioma" placeholder="Nivel de conocimiento" size="100%" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td rowspan="3">
+                    <label>Funciones de oficina que domina<br></br>
+                    <input type="text" id="inputOficina" placeholder="Funciones de oficina" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label>Maquina de Oficina o taller que sepa manejar<br></br>
+                    <input type="text" id="inputMaquina" placeholder="Ejemplo: Maquina de escribir o computadora" size="100%" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label>Otros trabajos o funciones que domina<br></br>
+                    <input type="text" id="inputOtros" placeholder="Otros trabajos o funciones que domina" size="100%" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <table border="2px" class="center">
+            <caption>Empleo Actual y anteriores</caption>
+            <tr>
+                <td>Concpeto</td>
+                <td colspan="2">Actual o último</td>
+                <td colspan="2">Anterior</td>
+                <td colspan="2">Anterior</td>
+                <td colspan="2">Anterior</td>
+            </tr>
+            <tr>
+                <td>Tiempo que presto sus servicios</td>
+                <td>
+                    <label for="deId">De<br>
+                    <input type="text" id="deId" placeholder="2022" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="aId">A
+                    <br>
+                    <input type="text" id="aId" placeholder="2023" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="deId">De<br>
+                    <input type="text" id="deId" placeholder="2022" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="aId">A
+                    <br>
+                    <input type="text" id="aId" placeholder="2023" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="deId">De<br>
+                    <input type="text" id="deId" placeholder="2022" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="aId">A
+                    <br>
+                    <input type="text" id="aId" placeholder="2023" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                    <label for="deId">De<br>
+                    <input type="text" id="deId" placeholder="2022" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="aId">A
+                    <br>
+                    <input type="text" id="aId" placeholder="2023" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Tiempo que presto sus servicios</td>
+                <td>
+                  <label for="deId">De<br>
+                  <input type="text" id="deId" placeholder="2022" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="aId">A
+                  <br>
+                  <input type="text" id="aId" placeholder="2023" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+              </td>
+              <td>
+                  <label for="deId">De<br>
+                  <input type="text" id="deId" placeholder="2022" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="aId">A
+                  <br>
+                  <input type="text" id="aId" placeholder="2023" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+              </td>
+              <td>
+                  <label for="deId">De<br>
+                  <input type="text" id="deId" placeholder="2022" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="aId">A
+                  <br>
+                  <input type="text" id="aId" placeholder="2023" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+              </td>
+              <td>
+                  <label for="deId">De<br>
+                  <input type="text" id="deId" placeholder="2022" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="aId">A
+                  <br>
+                  <input type="text" id="aId" placeholder="2023" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+              </td>
+            </tr>
+            <tr>
+                <td>Nombre de la Compañia</td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" class="input" placeholder="Ejemplo: mccormick">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Ejemplo: McDonalds" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Ejemplo: McQueen" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Ejemplo: Doctor Simi" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Dirección</td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Dirección de la empresa 1" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Dirección de la empresa 2" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Dirección de la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Dirección de la empresa 3" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Telefono de la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Telefono de la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Telefono de la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Telefono de la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Puesto desempeñado</td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Puesto desempeñado en la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Puesto desempeñado en la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Puesto desempeñado en la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label><br>
+                  <input type="text" placeholder="Puesto desempeñado en la empresa" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sueldo Mensual:</td>
+                <td>
+                    <label for="inicialId">Inicial
+                      <br>
+                      <input type="number" id="inicialId" class="input">
+                      <div class="line-box">
+                          <div class="line"></div>
+                    </label>
+                </td>
+                <td>
+                    <label for="finalId">Final
+                    <br>
+                    <input type="number" id="finalId" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+                </td>
+                <td>
+                  <label for="inicialId">Inicial
+                    <br>
+                    <input type="number" id="inicialId" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="finalId">Final
+                  <br>
+                  <input type="number" id="finalId" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+                </td>
+                <td>
+                  <label for="inicialId">Inicial
+                    <br>
+                    <input type="number" id="inicialId" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="finalId">Final
+                  <br>
+                  <input type="number" id="finalId" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+                </td>
+                <td>
+                  <label for="inicialId">Inicial
+                    <br>
+                    <input type="number" id="inicialId" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                  </label>
+              </td>
+              <td>
+                  <label for="finalId">Final
+                  <br>
+                  <input type="number" id="finalId" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Motivo de su separación</td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Motivo de la separación" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td colspan="2">
+                  <label>
+                  <input type="text" placeholder="Motivo de la separación" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Motivo de la separación" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Motivo de la separación" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nombre de su jefe directo</td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Nombre de su jefe directo" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td colspan="2">
+                  <input type="text" placeholder="Nombre de su jefe directo" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <input type="text" placeholder="Nombre de su jefe directo" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+                <td colspan="2">
+                  <input type="text" placeholder="Nombre de su jefe directo" class="input">
+                  <div class="line-box">
+                      <div class="line"></div>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Puesto de su jefe directo</td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Puesto de su jefe directo" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Puesto de su jefe directo" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Puesto de su jefe directo" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                  </td>
+                <td colspan="2">
+                  <label>
+                    <input type="text" placeholder="Puesto de su jefe directo" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Podemos solicitar informes de usted
+                    <select>
+                      <option value="">Seleccione</option>
+                      <option value="1">Si</option>
+                      <option value="2">No</option>
+                  </select>
+                  </label>
+                </td>
+                <td colspan="8">
+                    <label for="comentariosId">Comentarios de sus jefes:
+                    <br>
+                    <br>
+                    <input type="text" id="comentariosId" size="100%" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+
+                </td>
+            </tr>
+
+        </table>
+        <table border="2px" class="center">
+            <caption>Referencias Personales (Favor de no incluir jefes anteriores)</caption>
+            <tr>
+                <td>Nombre</td>
+                <td>Telefono</td>
+                <td>Parentesco</td>
+                <td>Tiempo que lo conoce</td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="text" placeholder="Nombre" class="input">
+                        <div class="line-box">
+                            <div class="line"></div>
+                        </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="text" placeholder="Telefono" class="input">
+                        <div class="line-box">
+                            <div class="line"></div>
+                        </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="text" placeholder="Parentesco" class="input">
+                        <div class="line-box">
+                            <div class="line"></div>
+                        </label>
+
+                </td>
+                <td>
+                    <label>
+                        <input type="text" placeholder="Tiempo que lo conoce" class="input">
+                        <div class="line-box">
+                            <div class="line"></div>
+                        </label>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <label>
+                    <input type="text" placeholder="Nombre" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </td>
+            <td>
+                <label>
+                    <input type="text" placeholder="Telefono" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </td>
+            <td>
+                <label>
+                    <input type="text" placeholder="Parentesco" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+
+            </td>
+            <td>
+                <label>
+                    <input type="text" placeholder="Tiempo que lo conoce" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </td>
+            </tr>
+            <tr>
+              <td>
+                <label>
+                    <input type="text" placeholder="Nombre" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </td>
+            <td>
+                <label>
+                    <input type="text" placeholder="Telefono" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </td>
+            <td>
+                <label>
+                    <input type="text" placeholder="Parentesco" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+
+            </td>
+            <td>
+                <label>
+                    <input type="text" placeholder="Tiempo que lo conoce" class="input">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </label>
+            </td>
+            </tr>
+        </table>
+        <table border="2px" class="center">
+            <caption>Datos Generales y Económicos del Aplicante</caption>
+        <tr>
+            <td>
+            <label for="inputEnteroEmp">¿Como se entero de este empleo?<br>
+            <select>
+            <option value="">Seleccione</option>
+            <option value="1">Por medio de un amigo</option>
+            <option value="2">Por medio de una persona que trabaja en la misma empresa</option>
+            <option value="3">Por medio de una persona que trabaja en otra empresa</option>
+            <option value="4">Por medio de un anuncio</option>
+            <option value="5">Por medio de una revista</option>
+            <option value="6">Por medio de una pagina web</option>
+            <option value="7">Por medio de otro metodo (Anotar)</option>
+            </select>
+            </label>
+            <label for="inputEnteroEmp"><br>¿Cual?</br>
+            <input type="text" placeholder="Anotar el medio:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+            </td>
+            <td colspan="4">
+            <label for="inputOtroIng">¿Tiene otro ingreso?</label><br>
+            <select>
+            <option value="">Seleccione</option>
+            <option value="1">Si</option>
+            <option value="2">No</option>
+            </select>
+            <label for="inputOtroIng"><br>¿Cual?</br>
+            <input type="text" placeholder="Anotar el medio:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+            <input type="text" placeholder="¿Cuanto dinero gana por otro medio?" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label for="inputParientesEmpresa">¿Cuantos parientes trabajan en la empresa?</label><br>
+                <select>
+                <option value="">Seleccione</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3 o más</option>
+            </td>
+        </tr>
+        <td>
+            <label>¿Su conyuge trabaja?</label>
+            <br>
+            <select>
+            <option value="">Seleccione</option>
+            <option value="1">Si</option>
+            <option value="2">No</option>
+            </select>
+        </td>
+        <td colspan="4">
+            <label>Percepción mensual de su conyuge
+            <input type="text" placeholder="Anotar la percepción mensual de su conyuge:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>¿Ha estado afianzado?</label>
+            <br>
+            <select>
+            <option value="">Seleccione</option>
+            <option value="1">Si</option>
+            <option value="2">No</option>
+            </select>
+        </td>
+        <td>
+            <label>¿Vive en casa propia?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label>Valor aproximado
+            <input type="text" placeholder="Anotar el valor aproximado de su casa:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>¿Ha estado afiliado a algún sindicato?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label>¿Paga renta?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label>Renta Mensual
+            <input type="text" placeholder="Anotar la renta mensual:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>¿Tiene seguro de vida?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label>¿Tiene automóvil propio?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label for="percepId">Marca y modelo
+            <input type="text" placeholder="Anotar la marca y modelo del automóvil:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>¿Puede viajar?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label>¿Tiene deudas?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td>
+            <label>Importe
+            <input type="text" placeholder="Anotar el importe de la deuda:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+    </tr>
+    <tr>
+        <td>
+            <label>¿Esta dispuesto a cambia de lugar de residencia?</label>
+            <br>
+            <select>
+              <option value="">Seleccione</option>
+              <option value="1">Si</option>
+              <option value="2">No</option>
+              </select>
+        </td>
+        <td colspan="2">
+            <label>¿Cuanto abona mensualmente?
+            <input type="text" placeholder="Anotar el monto mensual:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Fecha en que podria presentrarse a trabajar</label>
+            <br>
+            <input type="date" placeholder="12/02/2021" id="fechaCon" size="90%">
+
+        </td>
+        <td colspan="2">
+            <label>¿A cuánto ascienden sus gastos mensuales?
+            <input type="text" placeholder="Anotar el monto mensual:" class="input">
+            <div class="line-box">
+              <div class="line"></div>
+            </label>
+        </td>
+    </tr>
+</table>
+<table class="center">
+    <caption>Comentarios del Entrevistador y Firma</caption>
+    <tr>
+        <td rowspan="4">
+          <input type="text" placeholder="Comentarios del entrevistador" class="input" size="100%">
+          <div class="line-box">
+            <div class="line"></div>
+          </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <br>
+        </br>
+        </td>
+
+    </tr>
+</table>
+
+<br>
+<label><input type="checkbox" id="cbox1" value="first_checkbox"> Hago constar que mis respuestas son verdaderas</label><br>
+<button>Enviar Formulario (En construccion)</button>
+  </form>
+</div>
+
+</body>
+</html>

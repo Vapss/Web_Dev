@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenamiento por insercion</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+    <link rel="stylesheet" type="text/css"  href='css/common.css' />
+    <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+    <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+    <link rel="stylesheet" type="text/css"  href='css/prettyPhoto.css' />
+    <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+    <link rel="stylesheet" type="text/css"  href='style.css' />
+</head>
+<body>
+    <h1><center>Ordenamiento por inserción</center></h1>
+    <p>Observe</p>
+
+    <script>
+        let salir = 'n'
+let array = []
+
+while (salir == 'n') {
+    numero = prompt('ingresa un número')
+    if (numero != null) {
+        array.push(parseInt(numero))
+    }
+    let seguir = confirm('desea ingresar mas numeros')
+    if (!seguir) {
+        salir = 'y'
+    }
+}
+
+        document.write("<p>Array original: " + array + "</p>");
+        let longitud = array.length;
+        for (let i = 1; i < longitud; i++) {
+            let aux = array[i];
+            let j = i;
+            while (j > 0 && array[j - 1] > aux) {
+                array[j] = array[j - 1];
+                j--;
+            }
+            array[j] = aux;
+        }
+        document.write("<p>Array con ordenamiento por inserción: " + array + "</p>");
+    </script>
+</body>
+</html>
